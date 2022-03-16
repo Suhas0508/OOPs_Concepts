@@ -1,0 +1,36 @@
+
+/*
+ 1> Same name of that class name
+ 2> main purpose is to initialize the object
+ 3> Every java class has constructor
+ 5> it automatically call at time of object creation
+ 6> and it never contain any return type
+  
+ */
+
+
+package Concepts;
+class A {
+
+	int a;
+	String name;
+	
+//	A(){
+//		a = 5;
+//		name = "Suhas";
+//	}
+	
+	public void display() {
+		System.out.println("Number = "+a+"\nName = "+name);
+	}
+}
+
+public class Constructor {
+	
+	public static void main(String[] args) {
+	
+		A ref = new A();
+		ref.display();
+		
+	}
+}
