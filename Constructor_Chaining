@@ -1,0 +1,40 @@
+/*
+Constructor Chaining is the process 
+of calling one constructor of a class from another 
+constructor of the same class or another class using the current 
+object of the class.
+
+
+*/
+
+
+package Concepts;
+
+class Parent{
+	
+	Parent(){
+		System.out.println("Parent class constructor call");
+	}
+}
+
+class Chield extends Parent{
+	
+	Chield(){
+		this(10);
+		System.out.println("Chield class \"1st\" constructor call");
+	}
+	
+	Chield(int a){
+		System.out.println("Chield class \"2nd\" constructor call ");
+	}
+}
+
+public class Constructor_Chaining {
+	
+	public static void main(String[] args) {
+		
+		Chield ref = new Chield();
+
+	}
+
+}
