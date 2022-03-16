@@ -11,14 +11,12 @@ object of the class.
 package Concepts;
 
 class Parent{
-	
 	Parent(){
 		System.out.println("Parent class constructor call");
 	}
 }
 
 class Chield extends Parent{
-	
 	Chield(){
 		this(10);
 		System.out.println("Chield class \"1st\" constructor call");
@@ -30,7 +28,6 @@ class Chield extends Parent{
 }
 
 public class Constructor_Chaining {
-	
 	public static void main(String[] args) {
 		
 		Chield ref = new Chield();
